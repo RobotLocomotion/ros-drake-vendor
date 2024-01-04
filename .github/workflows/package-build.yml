@@ -16,3 +16,12 @@ jobs:
         with:
           package-name: drake
           target-ros2-distro: rolling
+          skip-tests: true
+          colcon-defaults: |
+            {
+              "build": {
+                "cmake-target": [
+                    "install"
+                ]
+              }
+            }
