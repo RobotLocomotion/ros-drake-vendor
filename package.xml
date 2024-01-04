@@ -29,14 +29,14 @@
   -->
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_vendor_package</buildtool_depend>
-  <buildtool_depend>git</buildtool_depend>
-  <buildtool_depend>eigen</buildtool_depend>
-  <buildtool_depend>pkg-config</buildtool_depend>
   <buildtool_depend>clang</buildtool_depend>
+  <buildtool_depend>eigen</buildtool_depend>
   <buildtool_depend>file</buildtool_depend>
-
-  <build_depend>gfortran</build_depend>
-  <build_depend>opencl-headers</build_depend>
+  <buildtool_depend>gfortran</buildtool_depend>
+  <buildtool_depend>git</buildtool_depend>
+  <buildtool_depend>nasm</buildtool_depend>
+  <buildtool_depend>opencl-headers</buildtool_depend>
+  <buildtool_depend>pkg-config</buildtool_depend>
 
   <depend>coinor-libipopt-dev</depend>
   <depend>java</depend>
