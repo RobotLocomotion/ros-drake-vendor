@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>drake</name>
+  <version>0.0.1</version>
+  <description>
+    The drake package provides a ROS installation for the Drake project:
+    https://drake.mit.edu/. The package uses ament_vendor to
+    download and build a given Drake version.
+  </description>
+  <maintainer email="drake-users@mit.edu">Drake Users</maintainer>
+  <license>BSD</license>
+
+  <!--
+      Missing Ubuntu dependencies in rosdistro from the list:
+      https://github.com/RobotLocomotion/drake/blob/v1.24.0/setup/ubuntu/source_distribution/packages-jammy.txt
+
+   - libg-dev (installed indirectly by opengl)
+   - libglx-dev (installed indirectly by qtbase5-dev)
+   - libmumps-seq-dev (installed indirectly, dependecy of coinor-libipopt-dev)
+   - patch (core dependency for any jammy system)
+   - python3-all-dev (equivalent to python3-dev)
+      Deb packages depends:
+        - python3 (python3-dev rosdep)
+        - libpython3-all-dev (python3-dev rosdep via libpython3-dev dep)
+        - python3-all:
+          Deb packages depends:
+           - python3 (python3-dev rosdep)
+           - python3-distutils (python3-dev rosdep)
+        - python3-dev (python3-dev rosdep)
+        - python3.8-dev (python3-dev rosdep)
+  -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_vendor_package</buildtool_depend>
+  <buildtool_depend>clang</buildtool_depend>
+  <buildtool_depend>file</buildtool_depend>
+  <buildtool_depend>gfortran</buildtool_depend>
+  <buildtool_depend>git</buildtool_depend>
+  <buildtool_depend>nasm</buildtool_depend>
+  <buildtool_depend>opencl-headers</buildtool_depend>
+  <buildtool_depend>patchelf</buildtool_depend>
+  <buildtool_depend>pkg-config</buildtool_depend>
+  <depend>coinor-libipopt-dev</depend>
+  <depend>java</depend>
+  <depend>libclang-dev</depend>
+  <depend>libglib-dev</depend>
+  <depend>liblapack-dev</depend>
+  <depend>libx11-dev</depend>
+  <depend>ocl-icd-opencl-dev</depend>
+  <depend>opengl</depend>
+  <depend>python3-dev</depend>
+  <depend>python3-distutils</depend>
+  <depend>python3-matplotlib</depend>
+  <depend>qtbase5-dev</depend>
+  <depend>zlib</depend>
+  <!-- External dependencies supported by CMake  -->
+  <buildtool_depend>eigen</buildtool_depend>
+  <depend>fmt</depend>
+  <depend>spdlog</depend>
+</package>
