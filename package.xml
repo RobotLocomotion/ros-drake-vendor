@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>drake</name>
-  <version>0.0.1</version>
+  <version>1.24.0</version>
   <description>
     The drake package provides a ROS installation for the Drake project:
     https://drake.mit.edu/. The package uses ament_vendor to
