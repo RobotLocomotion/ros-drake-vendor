@@ -40,7 +40,6 @@ RUN mkdir -p /tmp/ws/src/ros-drake-vendor
 WORKDIR /tmp/ws/src
 COPY . ros-drake-vendor/
 
-# RUN date
 RUN  rosdep init \
   && rosdep update \
   && rosdep install --from-paths . --ignore-src -r -y -i --rosdistro ${ROS_DISTRO}
