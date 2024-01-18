@@ -8,7 +8,6 @@ ament_vendor(drake
   VCS_URL https://github.com/RobotLocomotion/drake
   VCS_VERSION v1.25.0
   CMAKE_ARGS
-    -DDRAKE_IS_BUILDING_DOCUMENTATION:BOOL=OFF
     -DWITH_GUROBI:BOOL=OFF
     -DWITH_MOSEK:BOOL=OFF 
     -DWITH_SNOPT:BOOL=OFF
