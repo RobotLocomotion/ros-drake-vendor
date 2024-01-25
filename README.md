@@ -11,7 +11,7 @@ ROS helpers or ROS wrappers for Drake.
 
 # Installation process
 
-The repository defines a ROS package named drake, which facilitates the
+The repository defines a ROS package named drake_vendor, which facilitates the
 download of the Drake sources from its official repository. Subsequently, it
 invokes the CMake build system within these sources to facilitate the
 generation of a system installation for the toolbox.
