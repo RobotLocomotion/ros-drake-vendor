@@ -21,4 +21,4 @@ ament_vendor(drake
   GLOBAL_HOOK
 )
 
-ament_package()
+ament_package(CONFIG_EXTRAS drake-extras.cmake)
