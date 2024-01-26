@@ -42,6 +42,7 @@
   <depend>coinor-libipopt-dev</depend>
   <depend>java</depend>
   <depend>libclang-dev</depend>
+  <depend>libjchart2d-java</depend>
   <depend>libglib-dev</depend>
   <depend>liblapack-dev</depend>
   <depend>libx11-dev</depend>
