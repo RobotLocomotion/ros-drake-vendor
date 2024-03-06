@@ -35,6 +35,7 @@
   <buildtool_depend>file</buildtool_depend>
   <buildtool_depend>gfortran</buildtool_depend>
   <buildtool_depend>git</buildtool_depend>
+  <buildtool_depend>lsb-release</buildtool_depend>
   <buildtool_depend>nasm</buildtool_depend>
   <buildtool_depend>opencl-headers</buildtool_depend>
   <buildtool_depend>patchelf</buildtool_depend>
