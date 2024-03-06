@@ -15,14 +15,3 @@ The repository defines a ROS package named drake, which facilitates the
 download of the Drake sources from its official repository. Subsequently, it
 invokes the CMake build system within these sources to facilitate the
 generation of a system installation for the toolbox.
-
-# Docker testing
-
-The `Dockerfile.cmake_dpkg_flags` can be used to simulate the build that the
-ros_buildfarm will perform using calling the CMake building system with the
-dpkg-buildflags typically used in the ROS build environment. To test it:
-
-```
-docker build -f Dockefile.cmake_dpkg_flags -t ros_drake_vendor_cmake .
-docker run -i -t ros_drake_vendor_cmake /bin/bash
-```
