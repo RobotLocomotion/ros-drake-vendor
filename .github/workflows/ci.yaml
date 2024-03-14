@@ -15,6 +15,7 @@ jobs:
           package-name: drake
           target-ros2-distro: rolling
           skip-tests: true
+          # Remove cmake-target after https://github.com/RobotLocomotion/ros-drake-vendor/issues/10
           colcon-defaults: |
             {
               "build": {
