@@ -9,7 +9,7 @@
     download and build a given Drake version.
   </description>
   <maintainer email="drake-users@mit.edu">Drake Users</maintainer>
-  <license>BSD</license>
+  <license>BSD</license>  <!-- See https://github.com/RobotLocomotion/ros-drake-vendor/issues/13 -->
   <!--
       Missing Ubuntu dependencies in rosdistro from the list:
       https://github.com/RobotLocomotion/drake/blob/v1.24.0/setup/ubuntu/source_distribution/packages-jammy.txt
