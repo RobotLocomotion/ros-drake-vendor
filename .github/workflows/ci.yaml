@@ -9,11 +9,11 @@ jobs:
     steps:
       - uses: ros-tooling/setup-ros@v0.7
         with:
-          required-ros-distributions: rolling
+          required-ros-distributions: humble
       - uses: ros-tooling/action-ros-ci@v0.3
         with:
           package-name: drake
-          target-ros2-distro: rolling
+          target-ros2-distro: humble
           skip-tests: true
           # Remove cmake-target after https://github.com/RobotLocomotion/ros-drake-vendor/issues/10
           colcon-defaults: |
@@ -35,6 +35,6 @@ jobs:
         run: |
           # gflags is required by drake_cmake_installed
           sudo apt-get update && sudo apt-get install -y libgflags-dev
-          . /opt/ros/rolling/setup.bash
+          . /opt/ros/humble/setup.bash
           . install/setup.bash
           colcon build --merge-install --packages-select drake_cmake_installed drake_ament_cmake_installed --event-handlers console_direct+
