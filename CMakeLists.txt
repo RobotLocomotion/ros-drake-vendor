@@ -4,9 +4,13 @@ project(drake CXX)
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_vendor_package REQUIRED)
 
+# Extract the version from package.xml and use it to grab the upstream source
+ament_package_xml()
+set(PACKAGE_XML_VERSION ${${PROJECT_NAME}_VERSION})
+
 ament_vendor(drake
   VCS_URL https://github.com/RobotLocomotion/drake
-  VCS_VERSION v1.26.0
+  VCS_VERSION v${PACKAGE_XML_VERSION}
   CMAKE_ARGS
 # At the moment, closed-source dependencies are disabled.
     -DWITH_GUROBI:BOOL=OFF
