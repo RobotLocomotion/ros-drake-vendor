@@ -6,7 +6,7 @@ find_package(ament_cmake_vendor_package REQUIRED)
 
 ament_vendor(drake
   VCS_URL https://github.com/RobotLocomotion/drake
-  VCS_VERSION v1.26.0
+  VCS_VERSION v1.27.0
   CMAKE_ARGS
 # At the moment, closed-source dependencies are disabled.
     -DWITH_GUROBI:BOOL=OFF
